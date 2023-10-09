@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-banner bg-black fw-semibold d-flex align-items-center">
+                <div class="marquee w-100 d-flex">
+                    <div class="banner-item d-flex me-20">
+                        <div class="banner-item__icon pe-2">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <span class="banner-item__text text-uppercase text-white pe-2">speical offer: enjoy 3 months
+                            of
+                            shopify
+                            for</span>
+                        <span class="banner-item__offer text-uppercase">$1/month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-appbar row justify-content-around text-white">
+                <div class="header-appbar__left col-3 container row">
+                    <div class="header-appbar__left__brand col-7 d-flex align-items-center">
+                        <a href="https://new-ella-demo.myshopify.com/?fts=0" class="ms-2"><img class="shopify-logo"
+                                src="./assets/images/ellamart.webp" alt="shopify-logo"></a>
+                    </div>
+                    <div class="header-appbar__left__service col-5 text-start align-self-center">
+                        <span>Available 24/7 at</span>
+                        <span class="fw-semibold">091 234-ELLA</span>
+                    </div>
+                </div>
+                <div class="header-appbar__search col-6 d-flex align-items-center justify-content-center">
+                    <div class="search-wrapper px-3 bg-white rounded-pill d-flex justify-content-between row">
+                        <input class="col-11 border-0 my-2" size="24" type="search" placeholder="Search the store">
+                        <button class="search-button col-1 border-0 bg-white my-1"> <i class="bi bi-search"
+                                style="font-size: 1.5rem; color:#fd6506;"></i></button>
+                    </div>
+                </div>
+                <div class="header-appbar__right col-3 d-flex text-center mt-2">
+                    <a class=" col-3  text-white text-decoration-none" href="">
+                        <i style="font-size: 2rem" class="bi bi-suit-heart"></i>
+                        <p>Wish Lists</p>
+                    </a>
+                    <a class=" col-3  text-white text-decoration-none" href="">
+                        <i style="font-size: 2rem" class="bi bi-gift align-self-center"></i>
+                        <p>Gift Cards</p>
+                    </a>
+                    <a class=" col-3  text-white text-decoration-none" href="">
+                        <i style="font-size: 2rem" class="bi bi-person"></i>
+                        <p>Sign In</p>
+                    </a>
+                    <a class=" col-3  text-white text-decoration-none" href="">
+                        <i style="font-size: 2rem" class="bi bi-cart3"></i>
+                        <p>Cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="header-navbar row">
+                <div class="header-navbar__categories col-2 d-flex justify-content-start align-items-center ps-4">
+                    <i class="bi bi-grid-3x3-gap" style="font-size: 1.25rem; color: #fd6506;  ;"></i>
+                    <span class="fw-bold ps-2 pb-1">Categories</span>
+                    <i class="bi bi-chevron-up ps-1 pb-1" style="font-size: 0.75rem;"></i>
+                </div>
+                <div class="header-navbar__main col-8 align-self-center">
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Theme demo
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Shop
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Product
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Blog
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Pages
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> New In
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Trend
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-black"> Collections
+                        </span></a>
+                    <a class=" text-decoration-none mx-2" href=""><span class=" navbar-items text-orange"> Buy Ella
+                        </span></a>
+                </div>
+                <div class="header-navbar__language col-2 row align-self-center">
+                    <a class="col-4 d-flex text-decoration-none d-flex justify-content-center align-items-center text-black"
+                        href="">
+                        <i class="bi bi-headset" style="font-size: 1.25rem; color: #fd6506;"></i>
+                        <span class="ms-1 ">Help</span>
+                    </a>
+                    <div class="col-8 d-flex justify-content-center align-items-center">
+                        <img class="language-image" src="./assets/images/united-kingdom.png" alt="">
+                        <span class="ms-1">EN / US</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main px-2">
+            <div class="main-ad d-flex justify-content-center align-items-center">
+                <span class="pb-1"> <img src="./assets/images/icon-announcement-2.webp" alt=""></span>
+                <span class="mx-3">BUY NOW, PAY LATER STARTING AT 0% APR</span>
+                <button class="btn btn-light btn-sm border fw-semibold">LEARN MORE</button>
+            </div>
+            <div class="main-highlight w-100 m-3 row">
+                <div class="col-2 main-highlight__categories bg-white rounded-3 p-3">
+                    <div class="categories-title mb-3">
+                        <span class="bg-orange text-white col-8 px-3 py-2 rounded-2 rounded-bottom-0">SHOP BY
+                            CATEGORIES</span>
+                    </div>
+                    <div class="categories-items text-center row">
+                        <div class="col-6">
+                            <div>
+                                <a class="text-decoration-none text-center text-black" href="">
+                                    <span class="material-symbols-outlined">
+                                        sports_basketball
+                                    </span>
+                                    <p>Sports</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <i class="bi bi-watch"></i>
+                                    <p>Accessories</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <i class="bi bi-gear-wide-connected"></i>
+                                    <p>Machinery</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <span class="material-symbols-outlined">
+                                        chair
+                                    </span>
+                                    <p>Furniture</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <i class="bi bi-gift"></i>
+                                    <p>Gifts & Crafts</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <i class="bi bi-person-wheelchair"></i>
+                                    <p>Apparel</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <i class="bi bi-person-wheelchair"></i>
+                                    <p>Materials</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black " href="">
+                                    <i class="bi bi-person-wheelchair"></i>
+                                    <p>Garden & Pets</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black" href="">
+                                    <i class="bi bi-person-wheelchair"></i>
+                                    <p>Lights & Lighting</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a class="text-decoration-none text-center text-black" href="">
+                                    <i class="bi bi-person-wheelchair"></i>
+                                    <p>Raw Materials</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 main-highlight__main">
+                    <a href=""> <img src="./assets/images/home-20-slider-1.jpg" class="w-100" alt=""> </a>
+                </div>
+                <div class="col-4 main-highlight__sub">
+                    <div class="row text-end">
+                        <span class="col-6 col">
+                            <span class="row-6"> <a href="">
+                                    <img class="w-100" src="./assets/images/Home-20-slider-banner-1.webp" alt="">
+                                </a></span>
+                            <span> <a href="">
+                                    <img class="w-100" src="./assets/images/Home-20-slider-banner-3.webp" alt="">
+                                </a></span>
+                        <span class="col-6">
+                            <span> <a href="">
+                                    <img class="w-100" src="./assets/images/Home-20-slider-banner-2.webp" alt="">
+                                </a></span>
+                            <span> <a href="">
+                                    <img class="w-100" src="./assets/images/Home-20-slider-banner-4.webp" alt="">
+                                </a></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+<script src="./assets/js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>

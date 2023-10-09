@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url(../fonts/DM_Sans/static/DMSans-Regular.ttf);
+}
+
+.text-orange {
+  color: #fd6506;
+}
+
+.bg-orange {
+  background-color: #fd6506;
+}
+
+.wrapper {
+  font-family: "DM Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.header-banner {
+  height: 54px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.banner-item__offer,
+.banner-item__icon {
+  color: #ffff00;
+}
+
+.header-appbar {
+  height: 90px;
+  background-color: #fd6506;
+}
+
+.header-navbar {
+  height: 52px;
+}
+
+.shopify-logo {
+  width: 180px;
+  height: 38px;
+}
+
+.header-appbar__left__service {
+  font-size: 14px;
+}
+
+.header-appbar__search .search-wrapper {
+  height: 50px;
+  width: 80%;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+.header-appbar__right {
+  height: 54px;
+  font-size: 14px;
+}
+
+.header-navbar {
+  height: 52px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  min-height: 100vh;
+  background-color: rgb(245 245 245);
+}
+
+.navbar-items {
+  font-weight: 500;
+}
+.navbar-items:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header-navbar__language {
+  font-size: 14px;
+}
+
+.language-image {
+  height: 16px;
+  width: 16px;
+}
+
+.main-ad {
+  height: 80px;
+  font-size: 14px;
+}
+
+.main-highlight__categories {
+  font-size: 14px;
+}
+
+.main-highlight__sub {
+  max-height: 222px;
+  max-width: 222px;
+}
