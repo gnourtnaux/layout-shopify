@@ -10,7 +10,9 @@
 .bg-orange {
   background-color: #fd6506;
 }
-
+.bg-pink {
+  background-color: #ffd8d7;
+}
 .wrapper {
   font-family: "DM Sans", sans-serif;
   height: 100%;
@@ -102,9 +104,4 @@ input:focus {
 
 .main-highlight__categories {
   font-size: 14px;
-}
-
-.main-highlight__sub {
-  max-height: 222px;
-  max-width: 222px;
 }
