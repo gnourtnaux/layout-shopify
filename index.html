@@ -17,7 +17,7 @@
     <div class="wrapper">
         <div class="header">
             <div class="header-banner bg-black fw-semibold d-flex align-items-center">
-                <div class="marquee w-100 d-flex">
+                <div class="w-100 d-flex">
                     <div class="banner-item d-flex me-20">
                         <div class="banner-item__icon pe-2">
                             <i class="bi bi-lightning-charge-fill"></i>
@@ -30,8 +30,8 @@
                     </div>
                 </div>
             </div>
-            <div class="header-appbar row justify-content-around text-white">
-                <div class="header-appbar__left col-3 container row">
+            <div class="header-appbar row row-cols-3 justify-content-around text-white">
+                <div class="header-appbar__brand col-3 container row">
                     <div class="header-appbar__left__brand col-7 d-flex align-items-center">
                         <a href="https://new-ella-demo.myshopify.com/?fts=0" class="ms-2"><img class="shopify-logo"
                                 src="./assets/images/ellamart.webp" alt="shopify-logo"></a>
@@ -48,7 +48,7 @@
                                 style="font-size: 1.5rem; color:#fd6506;"></i></button>
                     </div>
                 </div>
-                <div class="header-appbar__right col-3 d-flex text-center mt-2">
+                <div class="header-appbar__options col-3 d-flex text-center">
                     <a class=" col-3  text-white text-decoration-none" href="">
                         <i style="font-size: 2rem" class="bi bi-suit-heart"></i>
                         <p>Wish Lists</p>
@@ -266,85 +266,551 @@
                     </div>
                 </div>
             </div>
-            <div class="main-products row row-cols-2 p-3">
-                <div class="main-newproducts col">
-                    <div class="main-newproducts__title">
-                        <span class="fw-bolder fs-5">
-                            New Products
-                        </span>
-                        <a class="text-black ps-4" href="">View all</a>
-                    </div>
-                    <div class="main-newproducts__items row row-cols-2 pt-4">
-                        <div class="col bg-white pt-4">
-                            <span class="bg-pink text-danger fst-italic rounded-1 p-1">Sale</span>
-                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="">
-                                <img class="w-100" src="./assets/images/card-1.webp" alt="">
-                                <p class="ps-3 text-black">(Product 16) Sample - Computers & Accessories For Sale</p>
-                            </a>
-                            <div class="ps-3 d-flex text-center">
-                                <span class="text-decoration-line-through">$99.00</span>
-                                <span class="fw-lighter px-2">From</span>
-                                <span class="fw-bold text-danger">$49.00</span>
-                            </div>
-                        </div>
-                        <div class="col bg-white pt-4">
-                            <span class="bg-pink text-danger fst-italic rounded-1 p-1">Sale</span>
-                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="">
-                                <img class="w-100" src="./assets/images/card-1.webp" alt="">
-                                <p class="ps-3 text-black">(Product 16) Sample - Computers & Accessories For Sale</p>
-                            </a>
-                            <div class="ps-3 d-flex text-center">
-                                <span class="text-decoration-line-through">$99.00</span>
-                                <span class="fw-lighter px-2">From</span>
-                                <span class="fw-bold text-danger">$49.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-newproducts__pagination"></div>
+            <div class="main-products row row-gap-4 p-3">
+                <div class="main-products__title">
+                    <span class="fw-bolder fs-5">
+                        Products
+                    </span>
+                    <a class="text-black ps-4" href="">View all</a>
                 </div>
-                <div class="main-featuredproducts col">
-                    <div class="main-featuredproducts__title">
-                        <span class="fw-bolder fs-5">
-                            Featured Products
-                        </span>
-                        <a class="text-black ps-4" href="">View all</a>
-                    </div>
-                    <div class="main-newproducts__items row row-cols-2 pt-4">
-                        <div class="col bg-white pt-4">
-                            <span class="bg-pink text-danger fst-italic rounded-1 p-1">Sale</span>
-                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="">
-                                <img class="w-100" src="./assets/images/card-1.webp" alt="">
-                                <p class="ps-3 text-black">(Product 16) Sample - Computers & Accessories For Sale</p>
-                            </a>
-                            <div class="ps-3 d-flex text-center">
-                                <span class="text-decoration-line-through">$99.00</span>
-                                <span class="fw-lighter px-2">From</span>
-                                <span class="fw-bold text-danger">$49.00</span>
+                <div class="main-products__items">
+                    <div class="row row-cols-5 py-2">
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="col bg-white pt-4">
-                            <span class="bg-pink text-danger fst-italic rounded-1 p-1">Sale</span>
-                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                                href="">
-                                <img class="w-100" src="./assets/images/card-1.webp" alt="">
-                                <p class="ps-3 text-black">(Product 16) Sample - Computers & Accessories For Sale</p>
-                            </a>
-                            <div class="ps-3 d-flex text-center">
-                                <span class="text-decoration-line-through">$99.00</span>
-                                <span class="fw-lighter px-2">From</span>
-                                <span class="fw-bold text-danger">$49.00</span>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="main-newproducts__pagination"></div>
+                    <div class="row row-cols-5 py-2">
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-item col px-3">
+                            <div class="single-item__wrapper bg-white rounded-1">
+                                <div class="sale-tag fst-italic text-white fw-bold rounded-end-2 rounded-top-1 px-2">
+                                    Sale
+                                    <div class="tag-shadow rounded-start-1"></div>
+                                </div>
+                                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                    href="">
+                                    <img class="w-100" src="./assets/images/card-1.webp" alt="">
+                                    <p class="text-black ps-3">(Product 16) Sample - Computers & Accessories For Sale
+                                        <span class="product-color">- Black</span>
+                                    </p>
+                                </a>
+                                <div class="d-flex text-center px-3 py-2">
+                                    <span class="text-decoration-line-through">$99.00</span>
+                                    <span class="fw-lighter px-2">From</span>
+                                    <span class="fw-bold text-danger">$49.00</span>
+                                </div>
+                                <div class="d-flex px-3 py-2">
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-black rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-success rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-danger rounded-circle"></div>
+                                    </div>
+                                    <div role="button"
+                                        class="handle-color d-flex justify-content-center align-items-center bg-white mx-1 border rounded-circle">
+                                        <div class="w-75 h-75 bg-warning rounded-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex py-3 justify-content-around align-items-center">
+                                    <button class="button-add-product w-50 fw-semibold rounded-5">Quick
+                                        Add</button>
+                                    <button
+                                        class="button-favorite rounded-circle material-symbols-outlined border-0">favorite</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="main-products__showmore d-flex justify-content-center align-items-center fw-semibold">
+                    <button class="border-0">
+                        Show more
+                    </button>
+                    <span class="material-symbols-outlined pt-1">
+                        expand_more
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer container text-center py-5">
+            <p class="text-uppercase fs-4 fw-bold">Subscribe to our newsletter</p>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <div class="newsletter-submit justify-content-center row gap-3">
+                <input class="col-5 rounded-1" type="text" placeholder="enter your email address">
+                <button class="button-submit col-2 rounded-5">Submit</button>
+            </div>
+            <div class="footer-list pt-5 row row-cols-5">
+                <div class="col text-start">
+                    <p class="list-title text-uppercase fs-5 fw-bold"> shop</p>
+                    <div class="list-item row row-gap-2">
+                        <a href="">Theme Demo</a>
+                        <a href="">Shop</a>
+                        <a href="">Product</a>
+                        <a href="">Blog</a>
+                        <a href="">Pages</a>
+                        <a href="">New In</a>
+                        <a href="">Trend</a>
+                        <a href="">Collections</a>
+                        <a href="">Buy Ella</a>
+                    </div>
+                </div>
+                <div class="col text-start">
+                    <p class="list-title text-uppercase fs-5 fw-bold"> top brands</p>
+                    <div class="list-item row row-gap-2">
+                        <a href="">Theme Demo</a>
+                        <a href="">Shop</a>
+                        <a href="">Product</a>
+                        <a href="">Blog</a>
+                        <a href="">Pages</a>
+                        <a href="">New In</a>
+                        <a href="">Trend</a>
+                        <a href="">Collections</a>
+                        <a href="">Buy Ella</a>
+                    </div>
+                </div>
+                <div class="col text-start">
+                    <p class="list-title text-uppercase fs-5 fw-bold"> further info.</p>
+                    <div class="list-item row row-gap-2">
+                        <a href="">Theme Demo</a>
+                        <a href="">Shop</a>
+                        <a href="">Product</a>
+                        <a href="">Blog</a>
+                        <a href="">Pages</a>
+                        <a href="">New In</a>
+                        <a href="">Trend</a>
+                        <a href="">Collections</a>
+                        <a href="">Buy Ella</a>
+                    </div>
+                </div>
+                <div class="col text-start">
+                    <p class="list-title text-uppercase fs-5 fw-bold"> customer service</p>
+                    <div class="list-item row row-gap-2">
+                        <a href="">Theme Demo</a>
+                        <a href="">Shop</a>
+                        <a href="">Product</a>
+                        <a href="">Blog</a>
+                        <a href="">Pages</a>
+                        <a href="">New In</a>
+                        <a href="">Trend</a>
+                        <a href="">Collections</a>
+                        <a href="">Buy Ella</a>
+                    </div>
+                </div>
+
+                <div class="contact col">
+                    <div class="d-flex justify-content-start align-items-center py-2"><span class="material-symbols-outlined pe-2">
+                            location_on
+                        </span><span>685 Market Street San Francisco, CA 94105, US
+                        </span></div>
+                    <div class="d-flex justify-content-start align-items-center py-2"><span class="material-symbols-outlined pe-2">
+                            call
+                        </span> <span>Call us at <a href="">(415) 555-5555</a></span></div>
+                    <div class="d-flex justify-content-start align-items-center py-2"><span class="material-symbols-outlined pe-2">
+                            mail
+                        </span> <span>Email <a href="">example@email.com</a></span></div>
+                    <div class="row row-cols-5">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
